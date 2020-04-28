@@ -165,6 +165,9 @@ ro.nfc.port=I2C
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# Pre-Rendering
+ro.vendor.perf.scroll_opt=true
+
 # RCS
 persist.rcs.supported=0
 
