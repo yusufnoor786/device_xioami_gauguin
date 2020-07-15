@@ -44,6 +44,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/gauguin
 TARGET_KERNEL_CONFIG := vendor/gauguin_defconfig
 TARGET_KERNEL_LLVM_BINUTILS := true
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/kernel/linux-x86/clang-r416183b
+BOARD_RAMDISK_USE_LZ4 := true
 
 # Platform
 TARGET_BOARD_PLATFORM := lito
