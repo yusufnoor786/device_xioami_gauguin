@@ -1,6 +1,9 @@
 # Charger
 ro.charger.enable_suspend=1
 
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
+
 # Display
 debug.sf.enable_hwc_vds=1
 qemu.sf.lcd_density=440
