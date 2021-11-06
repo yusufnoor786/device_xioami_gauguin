@@ -147,7 +147,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
-# Display
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/flash_super_dummy.sh:install/bin/flash_super_dummy.sh
+
+# Fstab
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
