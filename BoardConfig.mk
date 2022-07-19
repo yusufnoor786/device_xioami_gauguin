@@ -42,7 +42,8 @@ BOARD_KERNEL_CMDLINE := \
 	androidboot.usbcontroller=a600000.dwc3 \
 	swiotlb=2048 \
 	cgroup.memory=nokmem,nosocket \
-	loop.max_part=7
+	loop.max_part=7 \
+	cgroup_disable=pressure
 
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_BOOTIMG_HEADER_VERSION := 2
