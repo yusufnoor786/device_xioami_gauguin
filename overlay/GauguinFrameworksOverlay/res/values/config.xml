@@ -499,4 +499,7 @@
         <item>org.lineageos.aperture.dev</item>
     </string-array>
 
+    <!-- Device model (Build.MODEL) to spoof for netflix, if not empty -->
+    <string name="config_netflixSpoofModel" translatable="false">M2007J17G</string>
+
 </resources>
