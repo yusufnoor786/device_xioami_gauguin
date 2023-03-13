@@ -107,9 +107,6 @@ persist.vendor.dpmhalservice.enable=1
 # DRM
 drm.service.enabled=true
 
-# Factory Reset Protection
-ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
 # FM
 vendor.hw.fm.init=0
 
