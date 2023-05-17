@@ -113,6 +113,9 @@ drm.service.enabled=true
 # FM
 vendor.hw.fm.init=0
 
+# FS-verity
+ro.apk_verity.mode=2
+
 # Keystore
 ro.hardware.keystore_desede=true
 
