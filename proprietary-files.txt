@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from V13.0.5.0.SJSCNXM.
+# Unpinned blobs from gauguin-user 12 RKQ1.200826.002 V14.0.2.0.SJSCNXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
@@ -206,6 +206,7 @@ vendor/etc/camera/vidhance_calibration_hm2
 vendor/etc/camera/vidhance_calibration_imx682
 vendor/etc/camera/vidhance_calibration_ov16a1q
 vendor/etc/camera/vidhance_calibration_ov8856
+vendor/lib/camera/com.qti.sensormodule.ofilm_s5khm2.bin|be5314d0e809e6cc994f55a37ec8e36914f42cd8
 vendor/lib/libcamxexternalformatutils.so
 vendor/lib/libcamxfacialfeatures.so
 vendor/lib/libcamxfdalgo.so
@@ -285,19 +286,18 @@ vendor/lib64/camera/com.qti.sensor.gauguin_ov02b1b.so
 vendor/lib64/camera/com.qti.sensor.gauguin_ov16a1q.so
 vendor/lib64/camera/com.qti.sensor.gauguin_ov8856.so
 vendor/lib64/camera/com.qti.sensor.gauguin_s5khm2.so
-vendor/lib64/camera/com.qti.sensormodule.ofilm_s5khm2.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_hi259.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_ov02b1b.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_ov16a1q.bin
 vendor/lib64/camera/com.qti.sensormodule.sunny_ov8856.bin
-vendor/lib64/camera/com.qti.sensormodule.sunny_s5khm2.bin
+vendor/lib64/camera/com.qti.sensormodule.sunny_s5khm2.bin|74d522fba7c741908c796cbbbcc6305d90f6f102
 vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/com.qti.tuned.gauguin_ofilm_s5khm2_wide.bin
+vendor/lib64/camera/com.qti.tuned.gauguin_ofilm_s5khm2_wide.bin|256d571115abd7c88badc31194f470cab80934ff
 vendor/lib64/camera/com.qti.tuned.gauguin_sunny_hi259_macro.bin
 vendor/lib64/camera/com.qti.tuned.gauguin_sunny_ov02b1b_depth.bin
 vendor/lib64/camera/com.qti.tuned.gauguin_sunny_ov16a1q_front.bin
 vendor/lib64/camera/com.qti.tuned.gauguin_sunny_ov8856_ultra.bin
-vendor/lib64/camera/com.qti.tuned.gauguin_sunny_s5khm2_wide.bin
+vendor/lib64/camera/com.qti.tuned.gauguin_sunny_s5khm2_wide.bin|3d7094b0b4c68f9f9c78088d47485c3ef4415b8c
 vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigvideo.bin
@@ -581,11 +581,11 @@ vendor/lib/liboemcrypto.so|2c1525754f661b20bd83a9cd4ca6b56d78d88476
 vendor/lib64/liboemcrypto.so|6967571dfa2de7f4d73731ab0879245361827831
 
 # ESE
-vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
-vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
-vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/vendor.qti.esepowermanager@1.1.so
+vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|649bea818a6b865ab744ac0aae52657557199918
+vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc|3c024c7135ec3dd8658624509ee61396a74f1ede
+vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|c6b853c5a008123490afeb103a979daf1eb42ee3
+vendor/lib64/vendor.qti.esepowermanager@1.0.so|1d9663e2ad911aa75da4b07a2b17dd023d4c796e
+vendor/lib64/vendor.qti.esepowermanager@1.1.so|3e71c2927fe56732b081b6476df2efbd58d27178
 
 # Feature Enabler Client
 vendor/bin/feature_enabler_client
@@ -743,11 +743,11 @@ vendor/firmware/a650_zap.b02
 vendor/firmware/a650_zap.elf
 vendor/firmware/a650_zap.mdt
 
-# Hotword Enrollment
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
+# HotwordEnrollment
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|1f9513ba807bced528203f829eb9a8249e915d38
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|b53e90faf861f36c3b71f7f15f54960b1e9d6313
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
+-system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
 
 # IOP
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
@@ -919,7 +919,7 @@ vendor/lib64/unnhal-acc-hvx.so
 # NFC
 vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 vendor/etc/libnfc-nxp.conf
-vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so
+vendor/lib/libsn100u_fw.so:vendor/lib64/libsn100u_fw.so|2ed395ac4019876d74f3f31a4e3d5043e9106909
 
 # Peripheral manager
 vendor/bin/pm-proxy
@@ -1123,7 +1123,7 @@ system_ext/lib64/libdiag_system.so
 system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
--system_ext/priv-app/ims/ims.apk
+system_ext/priv-app/ims/ims.apk|6009eef03c57cf1f5c1f1e73071e7041f1f94702
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
@@ -1176,13 +1176,13 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 -system_ext/app/ImsRcsService/ImsRcsService.apk|93877b05f97ce9691f344b50512461b67a981b95
 system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar|e01800d96b0db524836856410d3dd0b9352ec46c
 
-# Secure Element
-vendor/bin/hw/vendor.qti.secure_element@1.2-service
-vendor/etc/init/vendor.qti.secure_element@1.2-service.rc
-vendor/lib64/android.hardware.secure_element@1.0-impl.so
-vendor/lib64/jcos_nq_client.so
-vendor/lib64/ls_nq_client.so
-vendor/lib64/se_nq_extn_client.so
+# Secure Element - from gauguin_CN
+vendor/bin/hw/vendor.qti.secure_element@1.2-service|3154e090b25eb04bb3150d7523a4c31f4126b8de
+vendor/etc/init/vendor.qti.secure_element@1.2-service.rc|5508c6d79529012a72744c28878d70638d51e837
+vendor/lib64/android.hardware.secure_element@1.0-impl.so|8e480172d9e34e20345ca05cdfe86c0190a20bb8
+vendor/lib64/jcos_nq_client.so|b0430238ee9a9874e3702d2be5968539598a95d2
+vendor/lib64/ls_nq_client.so|a906a909d2ea16c2bb81dc263cc76a339459fda8
+vendor/lib64/se_nq_extn_client.so|1503c49d969167adb420d36d2712aa16c4875c2e
 
 # Sensors
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
