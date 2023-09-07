@@ -1,12 +1,12 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 The derpfest
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_gauguin.mk
+    $(LOCAL_DIR)/derp_gauguin.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_gauguin-userdebug \
-    lineage_gauguin-eng
+    derp_gauguin-userdebug \
+    derp_gauguin-eng
