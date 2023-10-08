@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_gauguin.mk
+    $(LOCAL_DIR)/evox_gauguin.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_gauguin-userdebug \
-    derp_gauguin-eng
+    evox_gauguin-userdebug \
+    evox_gauguin-eng
