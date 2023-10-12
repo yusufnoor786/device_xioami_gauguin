@@ -43,7 +43,7 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # Partitions
-PRODUCT_BUILD_SUPER_PARTITION := false
+#PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Permissions
@@ -407,15 +407,18 @@ PRODUCT_PACKAGES += \
     vndservicemanager
 
 # Vibrator
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.xiaomi_gauguin
+#PRODUCT_PACKAGES += \
+#    vendor.qti.hardware.vibrator.service.xiaomi_gauguin
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/vibrator/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/configs/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/vibrator/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
+    android.hardware.wifi-service \
     hostapd \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
@@ -428,3 +431,13 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
+
+
+
+
+# Vibrator
+PRODUCT_PACKAGES += \
+   vendor.qti.hardware.vibrator.service
+
+PRODUCT_COPY_FILES += \
+    vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml

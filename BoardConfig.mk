@@ -14,7 +14,7 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a76
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_ARCH_VARIANT := armv8-2a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
@@ -54,10 +54,11 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/gauguin
-TARGET_KERNEL_CONFIG := vendor/gauguin_defconfig
+TARGET_KERNEL_CONFIG := gauguin_defconfig
 TARGET_KERNEL_LLVM_BINUTILS := true
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/kernel/linux-x86/clang-r416183b
+#TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/kernel/linux-x86/clang-r416183b
 BOARD_RAMDISK_USE_LZ4 := true
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Platform
 TARGET_BOARD_PLATFORM := lito
@@ -175,7 +176,7 @@ VENDOR_SECURITY_PATCH := 2022-05-01
 
 # SELinux
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
-
+SELINUX_IGNORE_NEVERALLOWS=true
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
