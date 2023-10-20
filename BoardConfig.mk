@@ -56,7 +56,6 @@ TARGET_KERNEL_CONFIG := gauguin_defconfig
 TARGET_KERNEL_LLVM_BINUTILS := true
 #TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/kernel/linux-x86/clang-r416183b
 BOARD_RAMDISK_USE_LZ4 := true
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Platform
 TARGET_BOARD_PLATFORM := lito
@@ -174,7 +173,7 @@ VENDOR_SECURITY_PATCH := 2022-05-01
 
 # SELinux
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
-SELINUX_IGNORE_NEVERALLOWS=true
+
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
