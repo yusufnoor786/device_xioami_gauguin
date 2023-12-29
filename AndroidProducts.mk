@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_gauguin.mk
+    $(LOCAL_DIR)/derp_gauguin.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_gauguin-user \
-    aosp_gauguin-userdebug \
-    aosp_gauguin-eng
+    derp_gauguin-user \
+    derp_gauguin-userdebug \
+    derp_gauguin-eng
